@@ -1,0 +1,773 @@
+/* www.pianos.cs/css/default.css */
+
+@import url("../../../css/tiny_style.css");
+
+body { background: white url("../images/site-back.jpg") repeat-x; text-align: center; }
+#page { position: relative; z-index: 0; width: 999px; margin: 0 auto; text-align: left; } body>/**/#page { margin-top: -1em; } /* vyĹ™eĹˇit */
+a { color: #dd9e15; background-color: inherit; background-image: none; }
+a:visited { color: #dd9e15; background-color: inherit; background-image: none; }
+a:visited:hover { color: #dd9e15; background-color: inherit; background-image: none; }
+a:hover { color: #dd9e15; background-color: inherit; background-image: none; }
+a.e-mail:hover, a.e-mail:focus { color: #dd9e15; background: inherit; } /* odkaz na e-mail */
+a img { border: none;}
+span.hidden { display: none; }
+hr.hidden { display: none; }
+div.cleaner { width: 100%; height: 1px; clear: both; }
+/* #page div.cleaner { display: none; } */
+
+/* accessibility */
+#accessibility { display: none; }
+
+/* header */
+#header { position: relative; width: 999px; height: 480px; margin: 0; padding: 0; z-index: 1; }
+#header h1 { position: absolute; top: 0; left: 0; z-index: 1; margin: 0; padding: 0; font-size: 36px; }
+#header h1 a { display: block; position: relative; width: 580px; height: 101px; padding: 0; color: white; background: #575151; overflow: hidden; }
+#header h1 a span { position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; margin: 0; padding: 0; background: url("../images/logo.gif") no-repeat; cursor: pointer; }
+#header #navigation a { display: block; position: absolute; top: 101px; z-index: 1; height: 180px; padding: 0;  overflow: hidden; }
+#header #navigation a span { position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; margin: 0; padding: 0; background-position: 0 -180px; cursor: pointer; }
+#header #navigation a:hover span, #header #navigation a.active span { background-position: 0 0; }
+
+#header #pianina-cs { left: 51px; width: 248px; }
+#header #pianina-cs span { background: url("../images/icon-pianina.gif") no-repeat; }
+#header #klaviry-cs { left: 299px; width: 236px; }
+#header #klaviry-cs span { background: url("../images/icon-klaviry.gif") no-repeat; }
+
+#header #pianina-en { left: 51px; width: 248px; }
+#header #pianina-en span { background: url("../images/icon-pianina-en.gif") no-repeat; }
+#header #klaviry-en { left: 299px; width: 236px; }
+#header #klaviry-en span { background: url("../images/icon-klaviry-en.gif") no-repeat; }
+
+#header #pianina-de { left: 51px; width: 248px; }
+#header #pianina-de span { background: url("../images/icon-pianina-de.gif") no-repeat; }
+#header #klaviry-de { left: 299px; width: 236px; }
+#header #klaviry-de span { background: url("../images/icon-klaviry-de.gif") no-repeat; }
+
+#header #pianina-sk { left: 51px; width: 248px; }
+#header #pianina-sk span { background: url("../images/icon-pianina-sk.gif") no-repeat; }
+#header #klaviry-sk { left: 299px; width: 236px; }
+#header #klaviry-sk span { background: url("../images/icon-klaviry-sk.gif") no-repeat; }
+
+
+#header #steinway { position: absolute; top: 373px; left: 0; z-index: 2; /* width: 100%;*/  line-height: 1.6em; margin: 0 0 0 84px; font-size: 0.9em; word-spacing: 0.3em; }
+#header #steinway p { text-align:center; font-size:18px;}
+#header #steinway p a { display: block; width: 275px; height: 114px; float: left; margin-right: 10px; padding-bottom: 5px; }
+#header #steinway p a:hover { width: 279px; height: 118px;  margin-right: 6px; padding-bottom: 0px; }
+#header #steinway p a span { display: none; }
+
+#header #steinway p a.steinway { background:url("../images/bannerSteinway.png") no-repeat 0 0;}
+#header #steinway p a.steinway:hover { background: #1a171b url("../images/bannerSteinway.png") no-repeat 1px 1px;}
+
+#header #steinway p a.boston { background:url("../images/bannerBoston.png") no-repeat 0 0;}
+#header #steinway p a.boston:hover { background: #024679 url("../images/bannerBoston.png") no-repeat  1px 1px;}
+
+#header #steinway p a.essex { background:url("../images/bannerEssex.png") no-repeat 0 0;}
+#header #steinway p a.essex:hover { background: #962442 url("../images/bannerEssex.png") no-repeat  1px 1px;}
+
+
+#header #manufacturers { position: absolute; top: 610px; left: 0; z-index: 2; /* width: 100%;*/  line-height: 1.6em;  border: none; margin: 0 0 0 57px; font-size: 0.9em; word-spacing: 0.3em; }
+#header .only { top: 383px !important; }
+
+#manufacturers a { position:relative; display: block; width:148px; height: 48px; padding: 0;  overflow: hidden; float:left; margin: 0 7px 0 7px;  border: none;}
+#header #manufacturers a:hover { text-decoration: none;}
+
+#manufacturers span { display: none;}
+#manufacturers .petrof { width:117px;}
+#manufacturers .forster { width:81px;}
+#manufacturers .rosler { width:80px;}
+#manufacturers .scholze { width:98px;}
+#manufacturers .weinbach { width:78px;}
+#manufacturers .bechstein { width:111px;}
+#manufacturers .bosendorfer { width:113px;}
+#manufacturers .steinway { width:132px;}
+#manufacturers .bluthner { width:109px;}
+#manufacturers .yamaha { width:109px;}
+#manufacturers .kawai { width:79px;}
+#manufacturers .seiler { width:68px;}
+#manufacturers .steinweg { width:148px;}
+#manufacturers .schimmel { width:95px;}
+#manufacturers .sauter { width:95px;}
+
+#manufacturers .petrof { background: url("../images/loga/petrof.png") no-repeat;  }
+#manufacturers .forster { background: url("../images/loga/logo-forster.png") no-repeat;  }
+#manufacturers .rosler { background: url("../images/loga/logo-rosler.png") no-repeat;  }
+#manufacturers .scholze { background: url("../images/loga/logo-scholze.png") no-repeat;  }
+#manufacturers .weinbach { background: url("../images/loga/logo-weinbach.png") no-repeat;  }
+#manufacturers .bechstein { background: url("../images/loga/logo-bechstein.png") no-repeat;  }
+#manufacturers .bosendorfer { background: url("../images/loga/logo-bosendorfer.png") no-repeat;  }
+#manufacturers .steinway { background: url("../images/loga/logo-steinway.png") no-repeat;  }
+#manufacturers .bluthner { background: url("../images/loga/logo-bluthner.png") no-repeat;  }
+#manufacturers .yamaha { background: url("../images/loga/logo-yamaha.png") no-repeat;  }
+#manufacturers .kawai { background: url("../images/loga/logo-kawai.png") no-repeat;  }
+#manufacturers .seiler { background: url("../images/loga/logo-seiler.png") no-repeat;  }
+#manufacturers .steinweg { background: url("../images/loga/logo-steinweg.png") no-repeat;  }
+#manufacturers .schimmel { background: url("../images/loga/logo-schimmel.png") no-repeat;  }
+#manufacturers .sauter { background: url("../images/loga/logo-sauter.png") no-repeat;  }
+
+
+#manufacturers a.forster:hover { background: url("../images/loga/hover/logo-forster.png") no-repeat;  }
+#manufacturers a.rosler:hover { background: url("../images/loga/hover/logo-rosler.png") no-repeat;  }
+#manufacturers a.scholze:hover { background: url("../images/loga/hover/logo-scholze.png") no-repeat;  }
+#manufacturers a.weinbach:hover { background: url("../images/loga/hover/logo-weinbach.png") no-repeat;  }
+#manufacturers a.bechstein:hover { background: url("../images/loga/hover/logo-bechstein.png") no-repeat;  }
+#manufacturers a.bosendorfer:hover { background: url("../images/loga/hover/logo-bosendorfer.png") no-repeat;  }
+#manufacturers a.steinway:hover { background: url("../images/loga/hover/logo-steinway.png") no-repeat;  }
+#manufacturers a.bluthner:hover { background: url("../images/loga/hover/logo-bluthner.png") no-repeat;  }
+#manufacturers a.yamaha:hover { background: url("../images/loga/hover/logo-yamaha.png") no-repeat;  }
+#manufacturers a.kawai:hover { background: url("../images/loga/hover/logo-kawai.png") no-repeat;  }
+#manufacturers a.seiler:hover { background: url("../images/loga/hover/logo-seiler.png") no-repeat;  }
+#manufacturers a.steinweg:hover { background: url("../images/loga/hover/logo-steinweg.png") no-repeat;  }
+#manufacturers a.schimmel:hover { background: url("../images/loga/hover/logo-schimmel.png") no-repeat;  }
+#manufacturers a.sauter:hover { background: url("../images/loga/hover/logo-sauter.png") no-repeat;  }
+
+
+
+#header object { position: absolute; top: 0; right: 0; z-index: 1; background: url("../images/main-flash.jpg") no-repeat; }
+#big-piano { position: absolute; top: 0; right: 0; z-index: 1; width: 418px; height: 300px; background: url("../images/main-flash.jpg") no-repeat; }
+
+#language { position: absolute; top: 6px; right: 387px; z-index: 2; margin: 0; padding: 0; color: #ADADAE; font-size: 0.9em; letter-spacing: -1px; }
+#language h4 { display: none; }
+#language a { display: block; position: absolute; top: 0; width: 16px; height: 14px; padding: 0; color: #DC000E; background: white; overflow: hidden; }
+#language a span { position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; margin: 0; padding: 0; cursor: pointer; }
+#cz span {
+    background: url("../images/icon-cs.gif") no-repeat scroll 0 0 transparent;
+}
+#cs { left: 0; }
+#cs span { background: url("../images/icon-cs.gif") no-repeat; }
+#en { left: 30px; }
+#en span { background: url("../images/icon-en.gif") no-repeat; }
+#de { left: 60px; }
+#de span { background: url("../images/icon-de.gif") no-repeat; }
+#sk { left: 90px; }
+#sk span { background: url("../images/icon-sk.gif") no-repeat; }
+
+/* content */
+
+
+#content { width: 855px; margin: 245px 0 0 63px; padding: 0; } /* #page>#content { width: 797px; } */
+.produkty #content, .detail-pianina #content {margin: 20px 0 0 63px;}
+
+#content a { font-weight: bold; }
+
+.produkt { position: relative; width: 256px; height: 436px; margin: 0 10px 30px 0; padding: 10px; float: left; } #content-bottom>.produkt { width: 254px; height: 416px; }
+.produkt .sleva, .produkt .novinka { position: absolute; top: 2px; right: 2px; z-index: 2; width: 84px; height: 92px; }
+.produkt a img { border: none; height: 99%; max-width: 240px; }
+.obrazek a img { border: none; height: 99%; max-width: 240px; }
+
+.produkt h5 { font-size: 0.9em; font-weight: normal; }
+.produkt h5 span { font-weight: bold; }
+.produkt .prdoducth5 { font-size: 0.9em; font-weight: normal; line-height:1.3em; margin:0 0 0.15em; color:#705B48;}
+.produkt .prdoducth5 span { font-weight: bold; }
+.produkt h2, .produkt h3 { margin: 0.2em 0 0.2em 0; font-size: 2.2em; font-weight: normal; }
+
+.pianina .produkt .produkt-title 				{ margin: 0.2em 0 0.2em 0; font-size: 0.8em; text-decoration: none; font-weight: normal; color:#dd9e15; }
+.pianina .produkt .produkt-title:hover 			{ text-decoration: underline;}
+.pianina .produkt .produkt-title:visited 		{ color:#dd9e15; }
+.pianina .produkt .produkt-title:visited:hover  { color:#dd9e15; }
+.pianina .produkt .produkt-title:active 		{ color:#dd9e15; }
+.pianina .produkt .obrazek 						{ width: 246px; height: 185px; margin: 0 0 0.5em 0;  padding: 3px 0 1px 0; border: 1px solid #C7B897; background: white; text-align: center; } .produkt>.obrazek { width: 246px; height: 185px; }
+.pianina .produkt .obrazek:hover 				{ border: 1px solid #fff; background: #dd9e15; }
+
+.klaviry .produkt .produkt-title 				{ margin: 0.2em 0 0.2em 0; font-size: 0.8em; text-decoration: none; font-weight: normal; color:#2C60A9; }
+.klaviry .produkt .produkt-title:hover 			{ text-decoration: underline;}
+.klaviry .produkt .produkt-title:visited 		{ color:#2C60A9; }
+.klaviry .produkt .produkt-title:visited:hover  { color:#2C60A9; }
+.klaviry .produkt .produkt-title:active 		{ color:#2C60A9; }
+.klaviry .produkt .obrazek 						{ width: 246px; height: 185px; margin: 0 0 0.5em 0; padding: 4px 2px 1px; text-align: center; border: 1px solid #C7B897; background: white; } .produkt>.obrazek { width: 246px; height: 185px; }
+.klaviry .produkt .obrazek:hover 				{ border: 1px solid #fff; background: #2C60A9; }
+
+.produkt .cena { margin: 0 0 5px 2px; }
+.produkt .cena span { font-size: 1.5em; }
+
+.produkt .akcni-cena { margin: -10px 0 -3px 2px;  }
+.produkt .akcni-cena span { font-size: 1.5em; color: #cc0000; }
+.produkt .stara-cena { font-size: 1em; margin: 0 0 2px 2px; }
+.produkt .stara-cena span.line-through {text-decoration: line-through;}
+
+.produkt .pronajem { margin: 0 0 1em 2px; }
+.produkt .pronajem span { font-weight:bold; font-style:italic; }
+.produkt dt { width: 6.5em; line-height: 1.6em; margin: 0 0.5em 0 0; text-align: right; font-weight: bold; float: left; clear: left; }
+.produkt dd { line-height: 1.6em; margin: 0; }
+.produkt .objednavka { position: absolute; top: 401px; left: 29px; z-index: 2; width: 216px; height: 29px; margin: 0; padding: 0; }
+.produkt .objednavka a { display: block; width: 100%; height: 100%; padding: 5px 0 0 0; color: black; text-align: center; text-decoration: none;  font-size: 1.1em; }
+
+#popis { position: relative; width: 522px; margin: 0 18px 18px 0; float: left; }
+#popis .cena { margin: 0 0 0 2px; }
+#popis .cena span { font-size: 1.5em; }
+#popis .stara_cena { margin: 0 0 1em 2px; font-size: 0.9em; text-decoration: line-through; }
+#popis .stara_cena span { font-size: 1.3em; }
+#popis dt { width: 10.5em; line-height: 1.6em; margin: 0 0.5em 0 0; font-weight: bold; float: left; clear: left; }
+#popis dd { line-height: 1.6em; margin: 0; }
+
+/* menu */
+#menu-cs, 
+#menu-de, 
+#menu-sk,
+#menu-en { position: absolute; top: 300px; left: 0; z-index: 2; width: 999px; margin: 0; padding: 0; font-size: 14px; }
+#menu-en { width: 1055px; }
+#menu-cs h4, #menu-en h4, #menu-de h4, #menu-sk h4 { display: none; }
+#menu-cs #menu_title, #menu-en #menu_title, #menu-de #menu_title, #menu-sk #menu_title { display: none; }
+#menu-cs ul, 
+#menu-de ul, 
+#menu-sk ul,
+#menu-en ul { margin: 0 0 0 72px; padding: 0; height: 58px; list-style: none outside none; }
+#menu-en ul { margin: 0 0 0 32px; }
+#menu-cs li, #menu-en li, #menu-de li, #menu-sk li { float: left; padding: 0; margin: 0; list-style: none outside none }
+#menu-cs a, #menu-en a, #menu-de a, #menu-sk a { display: block; position: relative; height: 58px; line-height: 58px; margin-right: 15px; padding: 6px 0 0 0; color: white; text-decoration: none; font-weight: bold; text-align: center; float: left; overflow: hidden; } 
+#menu-cs li>a, #menu-en li>a, #menu-de li>a, #menu-sk li>a { height: 58px; }
+
+/* submenu */
+#menu-cs ul li ul,
+#menu-de ul li ul,
+#menu-sk ul li ul,
+#menu-en ul li ul { background: black; height: auto; margin: 0; padding: 0; position: absolute; top: 58px; visibility: hidden; width: 150px; z-index: 999; }
+#menu-cs ul ul li,
+#menu-de ul ul li,
+#menu-sk ul ul li,
+#menu-en ul ul li { width: 100%; border-bottom: 1px solid white; background-color: black; }
+#menu-cs ul ul li>a,
+#menu-de ul ul li>a,
+#menu-sk ul ul li>a,
+#menu-en ul ul li>a { color: white; width: 100%; overflow: visible; height: auto; line-height: normal; text-align: center; margin: 8px 0px; padding: 0px; background: none; }
+#menu-cs ul li:hover ul, #menu-de ul li:hover ul, #menu-sk ul li:hover ul, #menu-en ul li:hover ul, 
+#menu-cs ul li a:hover ul, #menu-de ul li a:hover ul, #menu-sk ul li a:hover ul, #menu-en ul li a:hover ul, 
+#menu-cs ul li ul:hover, #menu-de ul li ul:hover, #menu-sk ul li ul:hover, #menu-en ul li ul:hover, 
+#menu-cs ul ul li:hover, #menu-de ul ul li:hover, #menu-sk ul ul li:hover, #menu-en ul ul li:hover { margin: 0; padding: 0; visibility: visible; }
+#menu-cs ul ul li:hover, #menu-de ul ul li:hover, #menu-sk ul ul li:hover, #menu-en ul ul li:hover { 
+	background: none repeat scroll 0% 0% #CB0808; -moz-box-shadow: 0px 0px 10px 2px #000 inset; -webkit-box-shadow: 0px 0px 10px 2px #000 inset; box-shadow: 0px 0px 10px 2px #000 inset; 
+}
+
+#menu-cs a span, #menu-en a span, #menu-de a span, #menu-sk a span { position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 58px; margin: 0; padding: 0; background-repeat: no-repeat; cursor: pointer; }
+
+#menu-cs a:hover span, #menu-cs a.active span, #menu-cs li.active a span { background-position: 0 -58px; }
+#menu-en a:hover span, #menu-en a.active span, #menu-en li.active a span { background-position: 0 -58px; }
+#menu-de a:hover span, #menu-de a.active span, #menu-de li.active a span { background-position: 0 -58px; }
+#menu-sk a:hover span, #menu-sk a.active span, #menu-sk li.active a span { background-position: 0 -58px; }
+
+
+#menu-1-about-cs { width: 72px; }
+#menu-1-about-cs span { background-image: url("../images/menu-1-about.gif"); }
+#menu-2-history-cs { width: 78px; }
+#menu-2-history-cs span { background-image: url("../images/menu-2-history.gif"); }
+#menu-3-pianina-cs { width: 73px; }
+#menu-3-pianina-cs span { background-image: url("../images/menu-3-pianina.gif"); }
+#menu-4-kridla-cs { width: 69px; }
+#menu-4-kridla-cs span { background-image: url("../images/menu-4-kridla.gif"); }
+#menu-5-buyout-cs { width: 66px; }
+#menu-5-buyout-cs span { background-image: url("../images/menu-5-buyout.gif"); }
+#menu-6-repairs-cs { width: 72px; }
+#menu-6-repairs-cs span { background-image: url("../images/menu-6-repairs.gif"); }
+#menu-7-seat-cs { width: 71px; }
+#menu-7-seat-cs span { background-image: url("../images/menu-7-seat.gif"); }
+#menu-8-contact-cs { width: 78px; }
+#menu-8-contact-cs span { background-image: url("../images/menu-8-contact.gif"); }
+#menu-9-rent-cs { width: 149px; }
+#menu-9-rent-cs span { background-image: url("../images/menu-9-pronajem.gif"); }
+#menu-10-references-cs { width: 89px; }
+#menu-10-references-cs span { background-image: url("../images/menu-10-reference.gif"); }
+
+#menu-1-about-sk { width: 72px; }
+#menu-1-about-sk span { background-image: url("../images/menu-1-about-sk.gif"); }
+#menu-2-history-sk { width: 78px; }
+#menu-2-history-sk span { background-image: url("../images/menu-2-history-sk.gif"); }
+#menu-3-pianina-sk { width: 65px; }
+#menu-3-pianina-sk span { background-image: url("../images/menu-3-pianina-sk.gif"); }
+#menu-4-kridla-sk { width: 69px; }
+#menu-4-kridla-sk span { background-image: url("../images/menu-4-kridla-sk.gif"); }
+#menu-5-buyout-sk { width: 66px; }
+#menu-5-buyout-sk span { background-image: url("../images/menu-5-buyout-sk.gif"); }
+#menu-6-repairs-sk { width: 72px; }
+#menu-6-repairs-sk span { background-image: url("../images/menu-6-repairs-sk.gif"); }
+#menu-7-seat-sk { width: 71px; }
+#menu-7-seat-sk span { background-image: url("../images/menu-7-seat-sk.gif"); }
+#menu-8-contact-sk { width: 78px; }
+#menu-8-contact-sk span { background-image: url("../images/menu-8-contact-sk.gif"); }
+#menu-9-rent-sk { width: 147px; }
+#menu-9-rent-sk span { background-image: url("../images/menu-9-rental-sk.gif"); }
+#menu-10-references-sk { width: 89px; }
+#menu-10-references-sk span { background-image: url("../images/menu-10-reference-sk.gif"); }
+
+#menu-1-about-en { width: 82px; }
+#menu-1-about-en span { background-image: url("../images/menu-1-about-en.gif"); }
+#menu-2-history-en { width: 75px; }
+#menu-2-history-en span { background-image: url("../images/menu-2-history-en.gif"); }
+#menu-3-pianina-en { width: 121px; }
+#menu-3-pianina-en span { background-image: url("../images/menu-3-pianina-en.gif"); }
+#menu-4-kridla-en { width: 128px; }
+#menu-4-kridla-en span { background-image: url("../images/menu-4-kridla-en.gif"); }
+#menu-5-buyout-en { width: 86px; }
+#menu-5-buyout-en span { background-image: url("../images/menu-5-buyout-en.gif"); }
+#menu-6-repairs-en { width: 64px; }
+#menu-6-repairs-en span { background-image: url("../images/menu-6-repairs-en.gif"); }
+#menu-7-seat-en { width: 79px; }
+#menu-7-seat-en span { background-image: url("../images/menu-7-seat-en.gif"); }
+#menu-8-contact-en { width: 78px; }
+#menu-8-contact-en span { background-image: url("../images/menu-8-contact-en.gif"); }
+#menu-9-rent-en { width: 154px; }
+#menu-9-rent-en span { background-image: url("../images/menu-9-rental-en.gif"); }
+#menu-10-references-en { width: 95px; }
+#menu-10-references-en span { background-image: url("../images/menu-10-reference-en.gif"); }
+
+#menu-1-about-de { width: 81px; }
+#menu-1-about-de span { background-image: url("../images/menu-1-about-de.gif"); }
+#menu-2-history-de { width: 76px; }
+#menu-2-history-de span { background-image: url("../images/menu-2-history-de.gif"); }
+#menu-3-pianina-de { width: 77px; }
+#menu-3-pianina-de span { background-image: url("../images/menu-3-pianina-de.gif"); }
+#menu-4-kridla-de { width: 68px; }
+#menu-4-kridla-de span { background-image: url("../images/menu-4-kridla-de.gif"); }
+#menu-5-buyout-de { width: 77px; }
+#menu-5-buyout-de span { background-image: url("../images/menu-5-buyout-de.gif"); }
+#menu-6-repairs-de { width: 89px; }
+#menu-6-repairs-de span { background-image: url("../images/menu-6-repairs-de.gif"); }
+#menu-7-seat-de { width: 71px; }
+#menu-7-seat-de span { background-image: url("../images/menu-7-seat-de.gif"); }
+#menu-8-contact-de { width: 83px; }
+#menu-8-contact-de span { background-image: url("../images/menu-8-contact-de.gif"); }
+#menu-9-rent-de { width: 149px; }
+#menu-9-rent-de span { background-image: url("../images/menu-9-rental-de.gif"); }
+#menu-10-references-de { width: 95px; }
+#menu-10-references-de span { background-image: url("../images/menu-10-reference-de.gif"); }
+
+
+/* footer */
+#footer { position: relative; width: 853px; margin: 0 0 0 64px; padding: 0 0 30px 0; color: #3F3F3F; background: url("../images/footer-new.jpg") no-repeat center bottom; clear: both; font-size: 0.9em; }
+#footer p { margin: 5px 15px;text-align: center; }
+#footer a { color: #3F3F3F; }
+#footer a img { height: auto; }
+#footer #bottom_menu a { color: #425F92; }
+#footer #copyright_update { float: left; width: 350px; text-align: left; }
+#footer #realizace { float: right; width: 350px; text-align: right; }
+#footer #toplist { padding-top: 10px; }
+#footer #back-links { margin: 15px 0; }
+
+/* other */
+.pager {margin:7px; text-align: center;}
+.pager a { display: block; width: 218px; height: 31px; background:url("../images/button-back.gif") 0 0 no-repeat; text-align:center; color: #000; padding: 7px 0 0 0; margin: auto; text-decoration: none !important;}
+.pager a:hover { display: block; width: 218px; height: 31px; background:url("../images/button-back.gif") 0 0 no-repeat; text-align:center; color: #000; padding: 7px 0 0 0; margin: auto; text-decoration: underline!important;}
+.orderBy {text-align: right; margin-right: 50px;}
+/* index */
+
+.produkty #content { width: 885px; }
+
+/* klaviry */
+.klaviry .produkt { background: url("../images/klavir-back.jpg") no-repeat; }
+.klaviry .produkt div.sleva-cs { background: url("../images/icons-klavir-sleva.gif") no-repeat; }
+.klaviry .produkt div.novinka-cs { background: url("../images/icons-klavir-new.gif") no-repeat; }
+.klaviry .produkt div.sleva-de { background: url("../images/icons-klavir-sleva-de.gif") no-repeat; }
+.klaviry .produkt div.novinka-de { background: url("../images/icons-klavir-new-de.gif") no-repeat; }
+.klaviry .produkt div.sleva-sk { background: url("../images/icons-klavir-sleva-sk.gif") no-repeat; }
+.klaviry .produkt div.novinka-sk { background: url("../images/icons-klavir-new-sk.gif") no-repeat; }
+.klaviry .produkt div.sleva-en { background: url("../images/icons-klavir-sleva-en.gif") no-repeat; }
+.klaviry .produkt div.novinka-en { background: url("../images/icons-klavir-new-en.gif") no-repeat; }
+.klaviry .produkt h5 { color: #2C60A9; }
+.klaviry .produkt h2 { color: #2C60A9; line-height: 22px; }
+.klaviry .produkt dt { color: #2D60A7; }
+.klaviry .produkt span.sleva-cs, .klaviry .produkt span.sleva-en, .klaviry .produkt span.sleva-de, .klaviry .produkt span.sleva-sk {background-color: #cc0000; color: white; text-decoration: none; padding: 0 0.3em;}
+
+/* detail-klaviry */
+.detail-klaviry #content { background: white url("../images/klavir-detail-back.gif") repeat-y; }
+.detail-klaviry #content-top { background: url("../images/klavir-detail-top.gif") no-repeat; }
+.detail-klaviry #content-bottom { position: relative; padding: 29px 0 29px 29px; background: url("../images/klavir-detail-footer.gif") left bottom no-repeat; }
+.detail-klaviry .sleva, .detail-klaviry .novinka { position: absolute; top: 2px; right: 1px; z-index: 2; width: 84px; height: 92px; }
+.detail-klaviry .novinka { right: 2px; }
+.detail-klaviry h5 { position: absolute; top: 9px; right: 103px; font-size: 0.9em; font-weight: normal; }
+.detail-klaviry h5 span { font-weight: bold; }
+.detail-klaviry .katalog_number { position: absolute; color:#2C60A9; line-height:1.3em; margin:0 0 0.15em; top: 9px; right: 103px; font-size: 0.9em; font-weight: normal; }
+.detail-klaviry .katalog_number span { font-weight: bold; }
+.detail-klaviry h2 { margin: 0 0 0.5em 0; font-size: 2.2em; font-weight: normal; }
+.detail-klaviry .sleva-cs { background: url("../images/icons-klavir-sleva.gif") no-repeat; }
+.detail-klaviry .novinka-cs { background: url("../images/icons-klavir-new.gif") no-repeat; }
+.detail-klaviry .sleva-de { background: url("../images/icons-klavir-sleva-de.gif") no-repeat; }
+.detail-klaviry .novinka-de { background: url("../images/icons-klavir-new-de.gif") no-repeat; }
+.detail-klaviry .sleva-sk { background: url("../images/icons-klavir-sleva-sk.gif") no-repeat; }
+.detail-klaviry .novinka-sk { background: url("../images/icons-klavir-new-sk.gif") no-repeat; }
+.detail-klaviry .sleva-en { background: url("../images/icons-klavir-sleva-en.gif") no-repeat; }
+.detail-klaviry .novinka-en { background: url("../images/icons-klavir-new-en.gif") no-repeat; }
+.detail-klaviry h5 { color: #2C60A9; }
+.detail-klaviry #katalog_number { color: #2C60A9; }
+.detail-klaviry h2 { color: #2C60A9; }
+.detail-klaviry h2 span { font-size: 0.6em; color: #999999; font-weight: bold; }
+.detail-klaviry dl { margin-bottom: 2em; }
+.detail-klaviry dl#dl-right { position: absolute; top: 43px; left: 238px; }
+.detail-klaviry dt { color: #2D60A7; }
+.detail-klaviry  .cena { margin: 0 0 0 2px; color: #2C60A9; }
+.detail-klaviry  .pronajem { margin: 0 0 1em 2px; color: #2C60A9; }
+.detail-klaviry  .pronajem span { font-weight:bold; font-style:italic; color: #2C60A9; }
+.detail-klaviry  .obrazek { width: 245px; height: 185px; margin: 0 18px 18px 0; padding: 3px 0 0 3px; border: 1px solid #C7B897; background: white; float: left; } .detail-klaviry>.obrazek { width: 245px; height: 185px; }
+
+/* pianina */
+.pianina .produkt { background: url("../images/piano-back.jpg") no-repeat; }
+.pianina .produkt div.sleva-cs { background: url("../images/icons-piano-sleva.gif") no-repeat; }
+.pianina .produkt div.novinka-cs { background: url("../images/icons-piano-new.gif") no-repeat; }
+.pianina .produkt div.sleva-de { background: url("../images/icons-piano-sleva-de.gif") no-repeat; }
+.pianina .produkt div.novinka-de { background: url("../images/icons-piano-new-de.gif") no-repeat; }
+.pianina .produkt div.sleva-sk { background: url("../images/icons-piano-sleva-sk.gif") no-repeat; }
+.pianina .produkt div.novinka-sk { background: url("../images/icons-piano-new-sk.gif") no-repeat; }
+.pianina .produkt div.sleva-en { background: url("../images/icons-piano-sleva-en.gif") no-repeat; }
+.pianina .produkt div.novinka-en { background: url("../images/icons-piano-new-en.gif") no-repeat; }
+.pianina .produkt h5 { color: #705B48; }
+.pianina .produkt h2 { color: #7B5644; }
+.pianina .produkt h2 span {
+    font-size: 0.4em !important;
+}
+.pianina .produkt dt { color: #7F5946; }
+.pianina .produkt span.sleva-cs, .pianina .produkt span.sleva-en, .pianina .produkt span.sleva-de, .pianina .produkt span.sleva-sk {background-color: #cc0000; color: white}
+
+/* detail-pianina */
+.detail-pianina #content { background: white url("../images/piano-detail-back.gif") repeat-y; }
+.detail-pianina #content-top { background: url("../images/piano-detail-top.gif") no-repeat; }
+.detail-pianina #content-bottom { position: relative; padding: 29px 0 29px 29px; background: url("../images/piano-detail-footer.gif") left bottom no-repeat; }
+.detail-pianina .sleva, .detail-pianina .novinka { position: absolute; top: 2px; right: 1px; z-index: 2; width: 84px; height: 92px; }
+.detail-pianina .novinka { right: 2px; }
+.detail-pianina h5 { position: absolute; top: 9px; right: 103px; font-size: 0.9em; font-weight: normal; }
+.detail-pianina h5 span { font-weight: bold; }
+.detail-pianina .katalog_number {  position: absolute; top: 9px; color: #dd9e15; line-height:1.3em; margin:0 0 0.15em; right: 103px; font-size: 0.9em; font-weight: normal; }
+.detail-pianina .katalog_number span { font-weight: bold; }
+.detail-pianina h2 { margin: 0 0 0.5em 0; font-size: 2.2em; font-weight: normal; }
+.detail-pianina h2 span { font-size: 0.6em; color: #999999; font-weight: bold; }
+.detail-pianina .sleva-cs { background: url("../images/icons-piano-sleva.gif") no-repeat; }
+.detail-pianina .novinka-cs { background: url("../images/icons-piano-new.gif") no-repeat; }
+.detail-pianina .sleva-de { background: url("../images/icons-piano-sleva-de.gif") no-repeat; }
+.detail-pianina .novinka-de { background: url("../images/icons-piano-new-de.gif") no-repeat; }
+.detail-pianina .sleva-sk { background: url("../images/icons-piano-sleva-sk.gif") no-repeat; }
+.detail-pianina .novinka-sk { background: url("../images/icons-piano-new-sk.gif") no-repeat; }
+.detail-pianina .sleva-en { background: url("../images/icons-piano-sleva-en.gif") no-repeat; }
+.detail-pianina .novinka-en { background: url("../images/icons-piano-new-en.gif") no-repeat; }
+.detail-pianina h5 { color: #dd9e15; }
+.detail-pianina #katalog_number { color: #dd9e15; }
+.detail-pianina h2 { color: #dd9e15; }
+.detail-pianina dl { margin-bottom: 2em; }
+.detail-pianina dl#dl-right { position: absolute; top: 43px; left: 238px; }
+.detail-pianina dt { color: #dd9e15; }
+.detail-pianina .cena { color: #d00c0c; }
+.detail-pianina  .pronajem { margin: 0 0 1em 2px; color: #d00c0c; }
+.detail-pianina  .pronajem span { font-weight:bold; font-style:italic; color: #d00c0c; }
+.detail-pianina .obrazek { width: 245px; height: 185px; margin: 0 18px 18px 0; padding: 3px 0 0 3px; border: 1px solid #C7B897; background: white; float: left; } .detail-pianina #content-bottom>.obrazek { width: 245px; height: 185px; }
+
+/* order */
+#order {}
+#order-form {margin: 20px; width: 700px;}
+#order-form .form_row 		{ margin: 3px 0; padding: 0 5px; min-height: 25px; /*border: 1px dashed #000;*/  }
+#order-form .form_cell_1 	{ display:block; width: 160px; float:left; padding: 0 0 0 5px;}
+#order-form .form_cell_2 {padding: 2px;}
+#order-form .form_cell_2 input {width: 200px; }
+#order-form #customerAddress	{width: 400px;}
+
+/* prohlaseni_o_pristupnosti */
+#accesskeys { margin-bottom: 2em; }
+#accesskeys p { margin-bottom: 0.5em; }
+#accesskeys ul { margin-bottom: 1em; }
+
+/* ostatní */
+#middle-column { padding-left: 30px; }
+.zpet { display:block; padding-top: 20px;}
+.italic { font-style:italic;}
+
+/* PRODUCTS DOUBLE SLIDER start*/
+
+#productsSlider {
+	margin: 282px 0 81px 0;
+	background: url("../images/bg_slider.png") top left;
+	width: 850px;
+	height: 233px;
+	position: relative;
+	font-family: "Verdana", "Arial",serif;
+}
+
+#productsSlider h2.topLeft, #productsSlider h2.bottomRight {
+	display: block;
+	width: 495px;
+	height: 56px;
+	position: absolute;
+	line-height: 56px;
+	font-size: 18px;
+	font-family: "Trebuchet MS", "Verdana", "Arial",serif;
+	padding: 0 18px;
+	text-align: right;
+}
+
+#productsSlider h2.topLeft {
+	color : #ac8930;
+	font-weight: lighter;
+	top: -75px;
+	left: 0;
+	background: url("../images/bg_slider-top-header.png") no-repeat top left;
+}
+
+#productsSlider h2.topLeft strong {
+	color: #614c14;
+	float: left;
+}
+
+#productsSlider h2.bottomRight {
+	color: #81849c;
+	font-weight: lighter;
+	bottom: -60px;
+	right: 0;
+	background: url("../images/bg_slider-bottom-header.png") no-repeat top left;
+}
+#productsSlider h2.bottomRight strong {
+	color: #575969;
+	float: left;
+}
+
+#productsSlider a img {
+	width: auto;
+	height: 100%;
+	max-width: 244px;
+}
+
+#productsSlider .leftColumn, #productsSlider .rightColumn {
+	width: 255px;
+	height: 200px;
+}
+
+#productsSlider .product {
+	display: none;
+}
+
+#productsSlider .product.visible:hover h2 {
+	text-decoration: underline;
+}
+#productsSlider .product.visible {
+	display: block;
+}
+
+#productsSlider .leftColumn {
+	float: left;
+	margin: 22px 0 0 47px;
+}
+#productsSlider .rightColumn {
+	float: right;
+	text-align: right;
+	margin: 22px 47px 0 0;
+}
+
+#productsSlider .leftColumn .imageContainer, #productsSlider .rightColumn .imageContainer {
+	padding: 3px;
+	border: 1px solid #ceac59;
+	background: #fff;
+	width: 244px;
+	height: 180px;
+	overflow: hidden;
+	text-align: center;
+
+	position: absolute;
+
+	/* rounded corners */
+	-moz-border-radius : 2px; /* Firefox */
+    -webkit-border-radius : 2px; /* Safari & Chrome */
+    -khtml-border-radius : 2px; /* Linux browsers */
+    border-radius : 2px; /* CSS3 compatible browsers */
+}
+#productsSlider .rightColumn .imageContainer {
+	right: 47px;
+}
+
+#productsSlider .rightColumn .imageContainer {
+	border-color: #c6b797;
+}
+
+
+#productsSlider .info {
+	position: absolute;
+	width: 200px;
+	padding: 20px 10px 10px;
+	height: 80px;
+}
+
+#productsSlider .leftColumn .info {
+	left: 307px;
+	top: 0;
+}
+#productsSlider .rightColumn .info {
+	right: 307px;
+	bottom: 0;
+	padding: 10px 10px 20px;
+}
+
+#productsSlider .info h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #7c5546;
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+#productsSlider .info h2.longer16to22 {
+	font-size: 16px;
+}
+
+#productsSlider .info h2.longerMoreThan22 {
+	font-size: 14px;
+}
+
+
+#productsSlider .info span.price {
+	font-size: 18px;
+	color: black;
+	display: block;
+	margin-bottom: 2px;
+	font-weight: lighter;
+}
+
+#productsSlider .info p {
+	margin: 5px 0 0 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+#productsSlider .info p strong {
+	color: #cf0000;
+	font-weight: lighter;
+	font-size: 12px;
+}
+#productsSlider .rightColumn .info p {
+	margin-top: 0;
+}
+
+#productsSlider .rightColumn .info p strong, #productsSlider .rightColumn .info p {
+	text-align: right;
+}
+
+#productsSlider .rightColumn .info h2 {
+	color: #66697c;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+#productsSlider .rightColumn .info span.price {
+	margin-top: 4px;
+	text-align: right;
+}
+
+#productsSlider .controlPanel {
+	position: absolute;
+	top:10px;
+}
+#productsSlider .controlPanel.left {
+	left:15px;
+}
+#productsSlider .controlPanel.right {
+	right:15px;
+}
+
+#productsSlider .controlPanel img {
+	cursor: pointer;
+}
+
+#productsSlider .controlPanel ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 2px;
+	height: 155px;
+	overflow: hidden;
+}
+
+#productsSlider .controlPanel ul li {
+	position: relative;
+	top: 0;
+	color: #7c5546;
+	font-size: 14px;
+	font-weight: bolder;
+	line-height: 25px;
+	width: 22px;
+	text-align: center;
+	cursor: pointer;
+	margin-bottom: 6px;
+}
+
+#productsSlider .controlPanel ul li.active, #productsSlider .controlPanel ul li:hover {
+	color: white;
+	background: #c97d33;
+}
+
+#productsSlider .controlPanel.right ul li {
+	color: #6f7285;
+}
+#productsSlider .controlPanel.right ul li:hover, #productsSlider .controlPanel.right ul li.active {
+	background: #898ca6;
+	color: #fff;
+}
+
+/* PRODUCTS DOUBLE SLIDER end */
+
+/* kontakty */
+#address, #contacts { float: left; margin-right: 4em; }
+#map { clear: left; }
+#map a { text-decoration: none; }
+#map a img { max-width: none; border: none;  }
+
+
+.red {
+	color: red;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+
+/* Ads */
+
+.foot {
+    border-top: 1px solid #999999;
+    background: #fdd981;
+    position:fixed;
+    width: auto;
+    height:200px;
+    z-index: 10000;
+    text-align:center;
+    font-size:18px;
+    color: #000;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: -200px;
+}
+.foot .holder { width: 800px; position: relative;}
+.foot .leftInfo { width: 400px; height: 200px; position: absolute; top:70px; left: 0; }
+.foot .rightInfo { width: 400px; height: 200px; position: absolute; top:70px; right: 0;}
+
+.foot .footButton {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.foot .footButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.foot .footButton span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.foot .footButton:hover span {
+    padding-right: 25px;
+}
+
+.foot .footButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}

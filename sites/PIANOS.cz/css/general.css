@@ -1,0 +1,55 @@
+/* www.pianos.cz/css/general.css */
+
+/* * { margin: 0; padding: 0; border: 0 none; } */
+body { margin: 0; padding: 0; color: black; background: white; font: 75% Verdana, 'Arial CE', Arial, 'Helvetica CE', Helvetica, sans-serif; text-align: left; }
+#page { width: auto; height: auto; margin: 0; padding: 0; text-align: left; }
+#accessibility { padding-top: 0.5em; }
+#header { padding: 1em; }
+#menu { padding: 1em; }
+#content { padding: 1em; }
+#left-column { padding: 1em; }
+#reference { padding: 1em; }
+#statistiky { display: none; }
+h1 { line-height: 1.3em; margin: 0 0 0.15em 0; font-size: 3em; }
+h2, h3 { line-height: 1.3em; margin: 1em 0 0.15em 0; font-size: 1.5em; }
+h4 { line-height: 1.3em; margin: 1em 0 0 0; font-size: 1.25em; }
+h5 { line-height: 1.3em; margin: 0 0 0.15em 0; font-size: 1em; }
+h6 { line-height: 1.3em; margin: 0 0 0.15em 0; font-size: 0.8em; }
+p { line-height: 1.4em; margin: 0 0 1em 0; /* text-indent: 2em; */ text-align: left; }
+p.citat { font-style: italic; text-align: right; }
+div.kde_kdy_podpis { padding-top: 2em; }
+p.kde_kdy { float: left; }
+p.podpis { margin-right: 3em; text-align: right; }
+.poznamka { font-style: italic; }
+table { margin: 1em 0; text-align: left; font-size: 1em; }
+th { padding-right: 1em; font-style: italic; }
+td { padding-right: 1em; vertical-align: top; }
+ul { margin-top: 0; margin-bottom: 0.3em; }
+ol { margin-top: 0; margin-bottom: 0.3em; }
+dl { margin-top: 0; margin-bottom: 0.3em; }
+dt { line-height: 1.4em; }
+dd { line-height: 1.4em; }
+li { line-height: 1.4em; }
+a { color: blue; background: inherit; text-decoration: underline; }
+a:visited { color: purple; background: inherit; }
+a:visited:hover { color: purple; background: inherit; /* text-decoration: none; */ }
+a:hover { color: blue; background: inherit; /* text-decoration: none; */ }
+a.nepodtrhavat { text-decoration: none; }
+a.nepodtrhavat:hover { text-decoration: underline; }
+a.external_link:hover {	color: inherit; background: inherit; }
+abbr, .abbr { border-bottom: 1px dashed black; cursor: help; }
+acronym { border-bottom: 1px dotted black; font-variant: normal; cursor: help; }
+hr { border: 1px inset; }
+
+.l { text-align: left; }
+.r { text-align: right; }
+.c { text-align: center; }
+.pr3 { padding-right: 3em !important; }
+.pl3 { padding-left: 3em; }
+.nw { white-space: nowrap; }
+.i { font-style: italic; }
+.ti { text-indent: 2em; }
+
+div#reference_ok p { margin: 0; padding: 1em; border: 4px double red; background: yellow; }
+
+/* * { border: black solid 1px; } */

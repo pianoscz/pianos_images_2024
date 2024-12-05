@@ -1,0 +1,20 @@
+/* nakodoval Martin Krch - www.krch.cz */
+
+body 	{ margin: 0; padding: 0; color: #000000; background: #ffffff; font-family:sans-serif; font-size:12px; text-align:left; }
+#page	{ width: auto; height: auto; margin: 0; padding: 0; text-align: left; }
+
+h1 		{ margin:0; font-size:35px; }
+h2		{ margin:0; font-size:25px; }
+h3		{ margin:0; font-size: 1.5em; }
+h4		{ margin:0; font-size: 1.25em; }
+h5		{ margin:0; font-size: 1em; }
+h6		{ margin:0; font-size: 0.8em; }
+p		{ margin:0; padding:0 10px 5px 10px; }
+
+ul		{ margin:0; }
+li		{ line-height: 1.4em; }
+
+a 		{ color: blue; text-decoration: underline; }
+a:visited { color: purple; }
+a:visited:hover { color: purple; }
+a:hover 	{ color: blue; }

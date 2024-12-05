@@ -1,0 +1,159 @@
+/* www.pianos.cz/css/default.css */
+
+body { background: white url("../images/site-back.jpg") repeat-x; text-align: center; }
+#page { position: relative; z-index: 0; width: 999px; margin: 0 auto; text-align: left; } body>/**/#page { margin-top: -1em; } /* vyřešit */
+a { color: #607835; background-color: inherit; background-image: none; }
+a:visited { color: #607835; background-color: inherit; background-image: none; }
+a:visited:hover { color: #607835; background-color: inherit; background-image: none; }
+a:hover { color: #607835; background-color: inherit; background-image: none; }
+a.e-mail:hover, a.e-mail:focus { color: #607835; background: inherit; } /* odkaz na e-mail */
+a img { border: none; }
+span.hidden { display: none; }
+hr.hidden { display: none; }
+div.cleaner { width: 100%; height: 1px; clear: both; }
+/* #page div.cleaner { display: none; } */
+
+/* accessibility */
+#accessibility { display: none; }
+
+/* header */
+#header { position: relative; width: 999px; height: 423px; margin: 0; padding: 0; }
+#header h1 { position: absolute; top: 0; left: 0; z-index: 1; margin: 0; padding: 0; font-size: 36px; }
+#header h1 a { display: block; position: relative; width: 580px; height: 101px; padding: 0; color: white; background: #575151; overflow: hidden; }
+#header h1 a span { position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; margin: 0; padding: 0; background: url("../images/logo.gif") no-repeat; cursor: pointer; }
+#header #navigation a { display: block; position: absolute; top: 101px; z-index: 1; height: 180px; padding: 0;  overflow: hidden; }
+#header #navigation a span { position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; margin: 0; padding: 0; background-position: 0 -180px; cursor: pointer; }
+#header #navigation a:hover span, #header #navigation a.active span { background-position: 0 0; }
+#header #pianina { left: 51px; width: 248px; }
+#header #pianina span { background: url("../images/icon-pianina.gif") no-repeat; }
+#header #klaviry { left: 299px; width: 236px; }
+#header #klaviry span { background: url("../images/icon-klaviry.gif") no-repeat; }
+#header #manufacturers { position: absolute; top: 373px; left: 0; z-index: 2; /* width: 100%; */ line-height: 1.6em; margin: 0 0 0 84px; text-align: center; font-size: 0.9em; word-spacing: 0.3em; }
+#header #manufacturers a:hover { text-decoration: none; }
+#header object { position: absolute; top: 0; right: 0; z-index: 1; background: url("../images/main-flash.jpg") no-repeat; }
+
+/* content */
+#content { width: 855px; margin: 0 0 0 63px; padding: 0; } /* #page>#content { width: 797px; } */
+#content h2 { margin: 1em 0 0.3em 0; font-size: 1.7em; color: #607934; }
+#content a { font-weight: bold; }
+
+.produkt { position: relative; width: 274px; height: 436px; margin: 0 10px 30px 0; padding: 10px; float: left; } #content-bottom>.produkt { width: 254px; height: 416px; }
+.produkt .sleva { position: absolute; top: 2px; right: 2px; z-index: 2; width: 84px; height: 92px; }
+.produkt .sold { position: absolute; top: 2px; right: 2px; z-index: 2; width: 84px; height: 92px; }
+.produkt h5 { font-size: 0.9em; font-weight: normal; }
+.produkt h5 span { font-weight: bold; }
+.produkt h3 { margin: 0.2em 0 0.2em 0; font-size: 2.2em; font-weight: normal; }
+.produkt .cena { margin: 0 0 1em 2px; }
+.produkt .cena span { font-size: 1.5em; }
+.produkt .obrazek { width: 252px; height: 189px; margin: 0 0 0.7em 0; padding: 3px 0 0 3px; border: 1px solid #C7B897; background: white; } .produkt>.obrazek { width: 249px; height: 186px; }
+.produkt dt { width: 6.5em; line-height: 1.6em; margin: 0 0.5em 0 0; text-align: right; font-weight: bold; float: left; clear: left; }
+.produkt dd { line-height: 1.6em; margin: 0; }
+.produkt .objednavka { position: absolute; top: 401px; left: 29px; z-index: 2; width: 216px; height: 29px; margin: 0; padding: 0; }
+.produkt .objednavka a { display: block; width: 100%; height: 100%; padding: 5px 0 0 0; color: black; text-align: center; text-decoration: none;  font-size: 1.1em; }
+
+#popis { position: relative; width: 522px; margin: 0 18px 18px 0; float: left; }
+#popis .cena { margin: 0 0 0 2px; }
+#popis .cena span { font-size: 1.5em; }
+#popis .stara_cena { margin: 0 0 1em 2px; font-size: 0.9em; text-decoration: line-through; }
+#popis .stara_cena span { font-size: 1.3em; }
+#popis dt { width: 7.5em; line-height: 1.6em; margin: 0 0.5em 0 0; font-weight: bold; float: left; clear: left; }
+#popis dd { line-height: 1.6em; margin: 0; }
+
+/* menu */
+#menu { position: absolute; top: 300px; left: 0; z-index: 1; width: 999px; margin: 0; padding: 0; font-size: 14px; }
+#menu h4 { display: none; }
+#menu ul { margin: 0 0 0 72px; padding: 0; list-style-type: none; }
+#menu li { display: inline; padding: 0; }
+#menu a { display: block; position: relative; height: 58px; margin-right: 37px; padding: 6px 0 0 0; color: white; text-decoration: none; font-weight: bold; text-align: center; float: left; overflow: hidden; } #menu li>a { height: 52px; }
+#menu a span { position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 58px; margin: 0; padding: 0; background-repeat: no-repeat; cursor: pointer; }
+#menu a:hover span, #menu a.active span, #menu li.active a span { background-position: 0 -58px; }
+#menu-1-about { width: 72px; }
+#menu-1-about span { background-image: url("../images/menu-1-about.gif"); }
+#menu-2-history { width: 78px; }
+#menu-2-history span { background-image: url("../images/menu-2-history.gif"); }
+#menu-3-pianina { width: 73px; }
+#menu-3-pianina span { background-image: url("../images/menu-3-pianina.gif"); }
+#menu-4-kridla { width: 69px; }
+#menu-4-kridla span { background-image: url("../images/menu-4-kridla.gif"); }
+#menu-5-buyout { width: 66px; }
+#menu-5-buyout span { background-image: url("../images/menu-5-buyout.gif"); }
+#menu-6-repairs { width: 72px; }
+#menu-6-repairs span { background-image: url("../images/menu-6-repairs.gif"); }
+#menu-7-seat { width: 62px; }
+#menu-7-seat span { background-image: url("../images/menu-7-seat.gif"); }
+#menu-8-contact { width: 78px; }
+#menu-8-contact span { background-image: url("../images/menu-8-contact.gif"); }
+
+/* footer */
+#footer { position: relative; width: 853px; height: 151px; margin: 0 0 0 64px; padding: 0; color: #3F3F3F; background: url("../images/footer.jpg") no-repeat; clear: both; font-size: 0.9em; } #page>#footer { margin-top: 2em; }
+#footer hr { display: none; }
+#footer p { margin: 0; }
+#footer a { color: #3F3F3F; }
+#fav_print_top { display: none; }
+#bottom_menu { position: absolute; top: 63px; left: 23px; }
+#bottom_menu a { color: #425F92; }
+#copyright_update { position: absolute; top: 94px; left: 23px; }
+#realizace { position: absolute; top: 94px; right: 17px; }
+
+/* other */
+/* index */
+
+/* klaviry */
+.produkty #content { width: 888px; }
+.klaviry .produkt { background: url("../images/klavir-back.jpg") no-repeat; }
+.klaviry .produkt .sleva { background: url("../images/icons-klavir-sleva.gif") no-repeat; }
+.klaviry .produkt .sold { background: url("../images/icons-klavir-sold.gif") no-repeat; }
+.klaviry .produkt h5 { color: #2C60A9; }
+.klaviry .produkt h3 { color: #2C60A9; }
+.klaviry .produkt dt { color: #2D60A7; }
+
+/* detail-klaviry */
+.detail-klaviry #content { background: white url("../images/klavir-detail-back.gif") repeat-y; }
+.detail-klaviry #content-top { background: url("../images/klavir-detail-top.gif") no-repeat; }
+.detail-klaviry #content-bottom { position: relative; padding: 29px 0 29px 29px; background: url("../images/klavir-detail-footer.gif") left bottom no-repeat; }
+.detail-klaviry .sleva { position: absolute; top: 2px; right: 1px; z-index: 2; width: 84px; height: 92px; }
+.detail-klaviry .sold { position: absolute; top: 2px; right: 2px; z-index: 2; width: 84px; height: 92px; }
+.detail-klaviry h5 { position: absolute; top: 9px; right: 103px; font-size: 0.9em; font-weight: normal; }
+.detail-klaviry h5 span { font-weight: bold; }
+.detail-klaviry h3 { margin: 0 0 0.5em 0; font-size: 2.2em; font-weight: normal; }
+.detail-klaviry .sleva { background: url("../images/icons-klavir-sleva.gif") no-repeat; }
+.detail-klaviry .sold { background: url("../images/icons-klavir-sold.gif") no-repeat; }
+.detail-klaviry h5 { color: #2C60A9; }
+.detail-klaviry h3 { color: #2C60A9; }
+.detail-klaviry dl { margin-bottom: 2em; }
+.detail-klaviry dl#dl-right { position: absolute; top: 43px; left: 238px; }
+.detail-klaviry dt { color: #2D60A7; }
+.detail-klaviry .cena { margin: 0 0 0 2px; color: #2C60A9; }
+.detail-klaviry .obrazek { width: 252px; height: 189px; margin: 0 18px 18px 0; padding: 3px 0 0 3px; border: 1px solid #C7B897; background: white; float: left; } .detail-klaviry #content-bottom>.obrazek { width: 247px; height: 184px; }
+
+/* pianina */
+.pianina .produkt { background: url("../images/piano-back.jpg") no-repeat; }
+.pianina .produkt .sleva { background: url("../images/icons-piano-sleva.gif") no-repeat; }
+.pianina .produkt .sold { background: url("../images/icons-piano-sold.gif") no-repeat; }
+.pianina .produkt h5 { color: #705B48; }
+.pianina .produkt h3 { color: #7B5644; }
+.pianina .produkt dt { color: #7F5946; }
+
+/* detail-pianina */
+.detail-pianina #content { background: white url("../images/piano-detail-back.gif") repeat-y; }
+.detail-pianina #content-top { background: url("../images/piano-detail-top.gif") no-repeat; }
+.detail-pianina #content-bottom { position: relative; padding: 29px 0 29px 29px; background: url("../images/piano-detail-footer.gif") left bottom no-repeat; }
+.detail-pianina .sleva { position: absolute; top: 2px; right: 1px; z-index: 2; width: 84px; height: 92px; }
+.detail-pianina .sold { position: absolute; top: 2px; right: 2px; z-index: 2; width: 84px; height: 92px; }
+.detail-pianina h5 { position: absolute; top: 9px; right: 103px; font-size: 0.9em; font-weight: normal; }
+.detail-pianina h5 span { font-weight: bold; }
+.detail-pianina h3 { margin: 0 0 0.5em 0; font-size: 2.2em; font-weight: normal; }
+.detail-pianina .sleva { background: url("../images/icons-piano-sleva.gif") no-repeat; }
+.detail-pianina .sold { background: url("../images/icons-piano-sold.gif") no-repeat; }
+.detail-pianina h5 { color: #607934; }
+.detail-pianina h3 { color: #607934; }
+.detail-pianina dl { margin-bottom: 2em; }
+.detail-pianina dl#dl-right { position: absolute; top: 43px; left: 238px; }
+.detail-pianina dt { color: #4B5E29; }
+.detail-pianina .cena { color: #D00C0C; }
+.detail-pianina .obrazek { width: 252px; height: 189px; margin: 0 18px 18px 0; padding: 3px 0 0 3px; border: 1px solid #C7B897; background: white; float: left; } .detail-pianina #content-bottom>.obrazek { width: 247px; height: 184px; }
+
+/* prohlaseni_o_pristupnosti */
+#accesskeys { margin-bottom: 2em; }
+#accesskeys p { margin-bottom: 0.5em; }
+#accesskeys ul { margin-bottom: 1em; }
